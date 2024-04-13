@@ -47,7 +47,7 @@ public class BowAgent : Agent
     {
         float horizontalAim = actionBuffers.ContinuousActions[0];
         float verticalAim = actionBuffers.ContinuousActions[1];
-        bool shoot = actionBuffers.DiscreteActions[0] == 1;
+        bool shoot = actionBuffers.DiscreteActions[0] == (int)ACTIONS.SHOOT;
 
         AdjustAim(horizontalAim, verticalAim);
 
@@ -110,7 +110,9 @@ public class BowAgent : Agent
 
     private void ResetTarget()
     {
-        target.localPosition = new Vector3(Random.Range(3, 10), target.localPosition.y, Random.Range(-10, -2));
+        int xRange = Random.Range(3, 10);
+        int zRange = Random.Range(-10, -2);
+        target.localPosition = new Vector3(xRange, target.localPosition.y, zRange);
         targetCenter = target.transform.Find("Center").gameObject;
     }
 
