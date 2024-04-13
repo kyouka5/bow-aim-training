@@ -1,0 +1,47 @@
+{
+    "BowAimTraining": {
+        "checkpoints": [
+            {
+                "steps": 499953,
+                "file_path": "results\\Run 0413-22\\BowAimTraining\\BowAimTraining-499953.onnx",
+                "reward": 1.2400305087483205,
+                "creation_time": 1713040776.9385269,
+                "auxillary_file_paths": [
+                    "results\\Run 0413-22\\BowAimTraining\\BowAimTraining-499953.pt"
+                ]
+            },
+            {
+                "steps": 999948,
+                "file_path": "results\\Run 0413-22\\BowAimTraining\\BowAimTraining-999948.onnx",
+                "reward": 1.5221531644058066,
+                "creation_time": 1713041501.6437209,
+                "auxillary_file_paths": [
+                    "results\\Run 0413-22\\BowAimTraining\\BowAimTraining-999948.pt"
+                ]
+            },
+            {
+                "steps": 1000145,
+                "file_path": "results\\Run 0413-22\\BowAimTraining\\BowAimTraining-1000145.onnx",
+                "reward": 1.518219697062631,
+                "creation_time": 1713041501.770719,
+                "auxillary_file_paths": [
+                    "results\\Run 0413-22\\BowAimTraining\\BowAimTraining-1000145.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1000145,
+            "file_path": "results\\Run 0413-22\\BowAimTraining.onnx",
+            "reward": 1.518219697062631,
+            "creation_time": 1713041501.770719,
+            "auxillary_file_paths": [
+                "results\\Run 0413-22\\BowAimTraining\\BowAimTraining-1000145.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
